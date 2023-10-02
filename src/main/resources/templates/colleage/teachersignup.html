@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header>
+    <title>signup</title>
+    </header>
+</head>
+<style>
+    .lab{
+        font-size:20px;
+    }
+body{
+    background-image: url("signup.jpg");
+    height:50px;
+    background-size: cover;
+    background-position: center; 
+}
+.whitediv{
+    width: 500px;
+        height: 500px;
+        margin-left:550px;
+        margin-top: 10px;
+        background-color: transparent;
+        border-radius: 20px;
+      
+}
+.textbox{
+    height: 30px;
+    width: 200px;
+    border: 1px;
+} 
+.button{
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    }
+.button:hover{
+   
+    background-color: red;
+}
+a{
+    color: brown;
+    font-size: 30px;
+}
+.textbox{
+    border: none;
+    background-color:transparent;
+    border-bottom: 3px solid white;
+    width:250px;
+    font-size :15px;
+    margin-top: 40px;
+    outline:none;
+    color: white;
+    margin-top: 15px;
+}
+::placeholder{
+    color: white;
+}
+</style>
+<script>
+    function validatePassword() {
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirm-password").value;
+
+      if (password != confirmPassword) {
+        alert("Passwords do not match!");
+        return false;
+      }
+      return true;
+    }
+  </script>
+<body>
+    <from action="abc.php">
+        <form onsubmit="return validatePassword()">
+        <div class="whitediv">
+        <label class="lab" ><h1> Teacher Signup</h1></label>
+        <label class="lab"><b>Name :</b> </label><br>
+        <input type="text" class="textbox"  placeholder="username" ><br><br>
+        <label class="lab"><b>Email:</b> </label><br>
+        <input type="email"  class="textbox" placeholder="enter user email id" ><br><br>
+        <label class="lab"><b>Contact_no:</b> </label><br>
+        <input type="text"  class="textbox" placeholder="enter user contact number" ><br><br>
+        <label for="password" class="lab" style="margin-left: 10px;"><b>Password:</b></label><br>
+        <input type="password" class="textbox" id="password" required placeholder="enter password"><br><br>
+        <label for="confirm-password" class="lab" style="margin-left: 10px;"><b>Confirm Password:</b></label><br>
+        <input type="password" class="textbox" id="confirm-password" required placeholder="enter created  password"><br><br>
+       
+        </from>
+    </label>
+        <a href="D:\snehal\teacherlogin.html"><button input="submit" class="button" value="signup" style="margin-left: 80px;">signup</button></a><br><br>
+       <br><a href="D:\snehal\teacherlogin.html"><b>login</b></a><br><br> 
+       </footer>
+    </div>
+    </from>
+</body>
+</html>

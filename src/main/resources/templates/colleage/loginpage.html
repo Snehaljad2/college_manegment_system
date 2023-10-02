@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<style>
+    .whitediv{
+        width: 800px;
+        height: 500px;
+        margin-left:850px;
+        margin-top: 50px;
+        background-color: transparent;
+        border-radius:5px;
+        padding: 10px;
+       }
+    body{
+        background-image : url('im.jpg');
+        height:100vh;
+        background-size: cover;
+        background-position: center; 
+    }
+    .lab{
+        font-size:20px;
+    }
+    
+    .button{
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    }
+.button:hover{
+   
+    background-color: red;
+}
+a{
+  font-size: 20px;
+}
+    </style>
+<body>
+    
+      
+    <form action="/colleage/login" th:object="${loginpage}" method="POST">
+        <div class="whitediv"> 
+        
+        <label class="lab"><h1> Student login</h1></label>
+        <label class="lab"><b>name :</b> </label>
+        name:<input type="text"  placeholder="username" th:field="*{name}" ><br><br>
+         <label class="lab" style="margin-left: 10px;"><b>Roll_no:</b> </label><br>
+        <input type="text"  class="textbox"placeholder="enter user roll number" th:field="*{roll_no}"><br>
+        <label class="lab"><b>password :</b> </label>
+        <input type="password"  placeholder="userpassword" th:field="*{password}"><br><br><br><br>
+        <a href="D:\snehal\studenthome.html"><button input="submit" class="button" value="login" style="margin-left: 150px;">login</button></a><br><br>
+        <br><br><a th:href="@{D:\snehal\forgetpage.html}"><b>forget password</b></a><br><br> 
+        <a href="D:\snehal\signup.html"><b>signup</b></a><br><br>
+        
+    </div>
+    </from>
+</label>
+    
+    
+    
+</body>
+</html>

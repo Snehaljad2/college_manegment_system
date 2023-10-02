@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacherattendance</title>
+	</head>
+	<style>
+		
+	   .button{
+	   height: 50px;
+	   width: 200px;
+	   background-color: rgb(204, 204, 240);
+	   }
+   .button:hover{
+	  
+	   background-color: red;
+   }
+   .lab{
+	   font-size: 30px;
+	   margin-bottom:300px;
+   }
+   .whitediv{
+		   width: 500px;
+		   height: 500px;
+		   margin-left:500px;
+		  
+		   background-color: transparent;
+		   border-radius: 20px;
+		  }
+		 
+	   </style>
+   <body>
+	   <title>Document</title>
+	   <header>
+		 <form action="{ {url_for('home')}}" method="POST">
+		   <nav class="navbar">
+			 <!-- LOGO -->
+			 <div class="logo">College Manegment Syatem</div>
+		 
+			 <!-- NAVIGATION MENU -->
+			 <ul class="nav-links">
+		 
+			   <!-- USING CHECKBOX HACK -->
+		 
+			   <!-- NAVIGATION MENUS -->
+			   <div class="menu"> 
+				 <center><li><a href="D:\snehal\studentattendance.html" ><input class="button" value=" check Attendance" style="margin-left: 5px;"></a></li></center>
+			 
+				 <center><li><a href="D:\snehal\viewpdf.html" ><input  class="button" value="view pdf" style="margin-left: 5px;"></a></li></center>
+			   
+				 <center><li><a href="D:\snehal\feedback.html" > <input  class="button" value="Give feedback" style="margin-left: 5px;"></a></li></center>
+					 <center><li> <a href="D:\snehal\cheaktest.html" ><input  class="button" value="check test & assignment" style="margin-left: 5px;"></a></li></center>
+					 <center><li><a href="D:\snehal\uplode.html " ><input class="button" value="uplode Answer sheets & assignment" style="margin-left: 5px;"></a></li></center>
+				   
+				 
+				 
+				 <input type="submit" class="button1" name="LOGOUT" value="LOGOUT">
+		 
+			   </div>
+			 </ul>
+		   </nav>
+		 
+		 
+		 
+		 
+		 
+		   </body>
+		 
+   <style>
+	   body
+	   {
+				   background-color:white;
+			   
+				   background-size:cover;
+	   }
+	   .navbar {
+		 display: flex;
+		 align-items: center;
+		 justify-content: space-between;
+		 padding: 20px;
+		 background-color: teal;
+		 color: #fff;
+	   }
+	   
+	   .nav-links a {
+		 color: #fff;
+	   }
+	   
+	   /* LOGO */
+	   .logo {
+		 font-size: 32px;
+	   }
+	   
+	   /* NAVBAR MENU */
+	   .menu {
+		 display: flex;
+		 gap: 1em;
+		 font-size: 18px;
+		 margin-left: 20px;
+	   }
+	   
+	   .menu li:hover {
+		 background-color: #4c9e9e;
+		 border-radius: 5px;
+		 transition: 0.3s ease;
+	   }
+	   
+	   .menu li {
+		 padding: 5px 14px;
+	   }
+	   
+	   /* DROPDOWN MENU */
+	   .services {
+		 position: relative;
+	   }
+	   
+	   .dropdown {
+		 background-color: rgb(1, 139, 139);
+		 padding: 1em 0;
+		 position: absolute;
+		  border-radius : 8px;
+		 top: 35px;
+	   }
+	   
+	   .dropdown li + li {
+		 margin-top: 10px;
+	   }
+	   
+	   .dropdown li {
+		 padding: 0.5em 1em;
+		 width: 8em;
+		 text-align: center;
+	   }
+	   
+	   .dropdown li:hover {
+		 background-color: #4c9e9e;
+	   }
+	   
+	   .services:hover .dropdown {
+		 display: block;
+	   }
+		.button1
+		 {
+		  margin-left:200px;
+		  border-radius:200px;
+		  margin-top:5px;
+		  font-size:15px;
+		  color:black;
+		  height:40px;
+		  width:100px;
+		  background-color:white;
+		  font-size:17px;
+		  font-weight:900;
+		  }
+		   .button1:hover
+		 {
+		  margin-left:200px;
+		  border-radius:200px;
+		  margin-top:5px;
+		  font-size:15px;
+		  color:white;
+		  height:40px;
+		  width:100px;
+		  background-color:black;
+		  font-size:17px;
+		  font-weight:900;
+		  }
+	   
+	   
+	   </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+
+
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+
+body {
+	padding:base-spacing-unit;
+	font-family:'Source Sans Pro', sans-serif;
+	margin:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+
+.container {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+    background-size:cover;
+
+}
+
+.table {
+    margin-top: -400px;
+	width:100%;
+	border:1px solid color-form-highlight;
+    background-size:cover;
+
+}
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#000;
+	padding:(half-spacing-unit * 1.5) 0;
+    background-size:cover;
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+	padding:(half-spacing-unit * 1.5) 0;
+	
+	&:nth-of-type(odd) {
+		background:color-form-highlight;
+	}
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+}
+
+.header__item {
+	text-transform:uppercase;
+}
+.date{
+    margin-top: -400px;
+	width:100%;
+	border:1px solid color-form-highlight;
+    background-size:cover;
+    margin-top:40px;
+}
+.text{
+    font-size: medium;
+    
+}
+._table{
+    display:flex;
+	width:100%;
+	background:#000;
+	padding:(half-spacing-unit * 1.5) 0;
+    background-size:cover;
+}
+
+.filter__link {
+	color:white;
+	text-decoration: none;
+	position:relative;
+	display:inline-block;
+	padding-left:base-spacing-unit;
+	padding-right:base-spacing-unit;
+	
+	.asc::after {
+		content:'';
+		position:absolute;
+		right:-(half-spacing-unit * 1.5);
+		color:white;
+		font-size:half-spacing-unit;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.desc::after {
+		content: '(desc)';
+	}
+
+	.asc::after {
+		content: '(asc)';
+	}
+	
+}
+    </style>
+</head>
+<header>
+
+</header>
+
+<div class="container">
+	
+	<div class="table">
+		<div class="table-header">
+			<div class="header__item"><a id="name" class="filter__link" href="#">RoLL No</a></div>
+			<div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Names</a></div>
+           <div> <input type="date"  placeholder="" ></div><br><br>
+			
+		</div>
+		<div class="table-content">	
+			<div class="table-row">		
+				<div class="table-data">1</div>
+				<div class="table-data">snehal namdev jadhav</div>
+                <input  type="text"  placeholder="P/A" ><br><br>
+           
+			</div>
+			
+		</div>	
+	</div>
+    
+</div>
+</body>
+</html>
